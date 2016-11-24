@@ -2,7 +2,7 @@
 
 > Vue.js developer assistant that visualizes your project source code
 
-## Build Setup
+## :notebook: How to use
 
 ``` bash
 # install dependencies with Yarn (yarnpkg.com)
