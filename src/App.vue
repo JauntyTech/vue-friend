@@ -6,19 +6,23 @@
         projects-pane
       el-col(v-bind:xs='24' v-bind:md='10')
         vue-pane
+      el-col(v-bind:xs='24' v-bind:md='10')
+        vuex-pane
 </template>
 
 <script>
 import HeaderPane from './components/HeaderPane'
 import ProjectsPane from './components/ProjectsPane'
 import VuePane from './components/VuePane'
+import VuexPane from './components/VuexPane'
 
 export default {
   name: 'app',
   components: {
     HeaderPane,
     ProjectsPane,
-    VuePane
+    VuePane,
+    VuexPane
   }
 }
 </script>
