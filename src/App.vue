@@ -1,15 +1,20 @@
 <template lang="pug">
   div#app
     header-pane
+    el-row#content-row
+      el-col(v-bind:xs='24' v-bind:md='4')
+        projects-pane
 </template>
 
 <script>
 import HeaderPane from './components/HeaderPane'
+import ProjectsPane from './components/ProjectsPane'
 
 export default {
   name: 'app',
   components: {
-    HeaderPane
+    HeaderPane,
+    ProjectsPane
   }
 }
 </script>
@@ -31,4 +36,20 @@ html, body
 
 #app .header-pane
   flex: 0 1 auto
+
+#content-row
+  display: flex
+  flex: 1 1 auto
+  flex-flow: row
+  flex-wrap: wrap
+
+#content-row > .el-col
+  flex: 1 1 auto
+
+#content-row > .el-col > div
+  height: 100%
+
+#content-row > .el-col > div > h2
+  margin: 0
+  padding: 20px 0
 </style>
