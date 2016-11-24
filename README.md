@@ -2,6 +2,10 @@
 
 > Vue.js developer assistant that visualizes your project source code
 
+## :construction: Under development
+
+Release date uncertain (part-time development began on November 23)
+
 ## :notebook: How to use
 
 ``` bash
