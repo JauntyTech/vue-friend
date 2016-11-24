@@ -1,8 +1,7 @@
-<template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
-  </div>
+<template lang="pug">
+  div#app
+    img(src='./assets/logo.png')
+    hello
 </template>
 
 <script>
