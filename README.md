@@ -6,6 +6,27 @@
 
 Release date uncertain (part-time development began on November 23)
 
+## :white_check_mark: To-do list
+
+#### Setup
+
+- [x] Lay out panes
+- [ ] Add Vuex store
+
+#### Improve Vue visualization
+
+- [ ] Show more component information in Vue pane
+
+#### Improve Vuex visualization
+
+- [ ] Convert Vuex image to interactive SVG
+
+#### Analyze projects
+
+- [ ] Figure out a good way to parse a project's Vue component tree
+- [ ] Figure out a good way to parse a project's Vuex store
+- [ ] Set up a workflow for users to select projects on their computer
+
 ## :notebook: How to use
 
 ``` bash
