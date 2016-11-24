@@ -1,26 +1,63 @@
 <template lang="pug">
   div#app
-    img(src='./assets/logo.png')
-    hello
+    header-pane
+    el-row#content-row
+      el-col(v-bind:xs='24' v-bind:md='4')
+        projects-pane
+      el-col(v-bind:xs='24' v-bind:md='10')
+        vue-pane
+      el-col(v-bind:xs='24' v-bind:md='10')
+        vuex-pane
 </template>
 
 <script>
-import Hello from './components/Hello'
+import HeaderPane from './components/HeaderPane'
+import ProjectsPane from './components/ProjectsPane'
+import VuePane from './components/VuePane'
+import VuexPane from './components/VuexPane'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    HeaderPane,
+    ProjectsPane,
+    VuePane,
+    VuexPane
   }
 }
 </script>
 
 <style lang="sass">
+html, body
+  height: 100%
+  margin: 0
+
 #app
+  color: #2c3e50
+  display: flex
+  flex-flow: column
   font-family: 'Avenir', Helvetica, Arial, sans-serif
+  height: 100%
+  text-align: center
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  text-align: center
-  color: #2c3e50
-  margin-top: 60px
+
+#app .header-pane
+  flex: 0 1 auto
+
+#content-row
+  display: flex
+  flex: 1 1 auto
+  flex-flow: row
+  flex-wrap: wrap
+
+#content-row > .el-col
+  flex: 1 1 auto
+
+#content-row > .el-col > div
+  height: 100%
+
+#content-row > .el-col > div > h2
+  margin: 0
+  padding: 20px 0
 </style>
