@@ -1,26 +1,34 @@
 <template lang="pug">
   div#app
-    img(src='./assets/logo.png')
-    hello
+    header-pane
 </template>
 
 <script>
-import Hello from './components/Hello'
+import HeaderPane from './components/HeaderPane'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    HeaderPane
   }
 }
 </script>
 
 <style lang="sass">
+html, body
+  height: 100%
+  margin: 0
+
 #app
+  color: #2c3e50
+  display: flex
+  flex-flow: column
   font-family: 'Avenir', Helvetica, Arial, sans-serif
+  height: 100%
+  text-align: center
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  text-align: center
-  color: #2c3e50
-  margin-top: 60px
+
+#app .header-pane
+  flex: 0 1 auto
 </style>
