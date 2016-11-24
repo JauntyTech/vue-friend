@@ -1,4 +1,4 @@
-# Vue Friend
+<img src="static/badge.png" alt="Vue Friend" width="300px"/>
 
 > Vue.js developer assistant that visualizes your project source code
 
