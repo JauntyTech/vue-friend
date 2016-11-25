@@ -2,7 +2,10 @@
   div#app
     header-pane
     el-row#content-row
-      el-col(v-bind:xs='24' v-bind:md='4')
+      el-col(
+        v-bind:xs='24' v-bind:md='4'
+        v-loading.body='isProjectsPaneWaiting'
+      )
         projects-pane
       el-col(v-bind:xs='24' v-bind:md='10')
         vue-pane
@@ -11,6 +14,8 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+import * as getterNames from './store/getterNames'
 import HeaderPane from './components/HeaderPane'
 import ProjectsPane from './components/ProjectsPane'
 import VuePane from './components/VuePane'
@@ -18,6 +23,9 @@ import VuexPane from './components/VuexPane'
 
 export default {
   name: 'app',
+  computed: mapGetters([
+    getterNames.isProjectsPaneWaiting
+  ]),
   components: {
     HeaderPane,
     ProjectsPane,

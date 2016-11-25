@@ -13,7 +13,8 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations } from 'vuex'
+import { mapActions, mapGetters, mapMutations } from 'vuex'
+import * as actionTypes from '../store/actionTypes'
 import * as getterNames from '../store/getterNames'
 import * as mutationTypes from '../store/mutationTypes'
 
@@ -23,9 +24,17 @@ export default {
     getterNames.projects,
     getterNames.selectedProjectId
   ]),
-  methods: mapMutations([
-    mutationTypes.SELECT_PROJECT
-  ])
+  methods: {
+    ...mapActions([
+      actionTypes.GET_PROJECTS
+    ]),
+    ...mapMutations([
+      mutationTypes.SELECT_PROJECT
+    ])
+  },
+  mounted () {
+    this.GET_PROJECTS()
+  }
 }
 </script>
 
