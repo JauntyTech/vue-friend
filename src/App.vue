@@ -8,7 +8,7 @@
       )
         projects-pane
       el-col(v-bind:xs='24' v-bind:md='10')
-        vue-pane
+        components-pane
       el-col(v-bind:xs='24' v-bind:md='10')
         vuex-pane
 </template>
@@ -16,9 +16,9 @@
 <script>
 import { mapGetters } from 'vuex'
 import * as getterNames from './store/getterNames'
+import ComponentsPane from './components/ComponentsPane'
 import HeaderPane from './components/HeaderPane'
 import ProjectsPane from './components/ProjectsPane'
-import VuePane from './components/VuePane'
 import VuexPane from './components/VuexPane'
 
 export default {
@@ -27,9 +27,9 @@ export default {
     getterNames.isProjectsPaneWaiting
   ]),
   components: {
+    ComponentsPane,
     HeaderPane,
     ProjectsPane,
-    VuePane,
     VuexPane
   }
 }

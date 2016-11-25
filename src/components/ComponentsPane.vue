@@ -1,6 +1,6 @@
 <template lang="pug">
   div.vue-pane
-    h2 Vue
+    h2 Components
     el-tree(
       v-bind:data='data'
       v-bind:default-expand-all='true'
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'VuePane',
+  name: 'ComponentsPane',
   data () {
     return {
       data: [
@@ -50,7 +50,7 @@ export default {
   },
   methods: {
     handleNodeClick (data) {
-      console.log('Vue click:', data)
+      console.log('Component click:', data)
     }
   }
 }
