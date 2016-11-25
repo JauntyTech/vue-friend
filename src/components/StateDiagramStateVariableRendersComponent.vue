@@ -1,14 +1,14 @@
 <template lang="pug">
-  g.state-diagram-component-commits-mutation
+  g.state-diagram-state-variable-renders-component
     line(
-      x1='135' v-bind:y1='sourceYOffset'
-      x2='345' v-bind:y2='targetYOffset'
+      x1='175' v-bind:y1='sourceYOffset'
+      x2='135' v-bind:y2='targetYOffset'
     )
 </template>
 
 <script>
 export default {
-  name: 'StateDiagramComponentCommitsMutation',
+  name: 'StateDiagramStateVariableRendersComponent',
   props: {
     componentIndex: {
       type: Number,
@@ -18,30 +18,30 @@ export default {
       type: Number,
       required: true
     },
-    mutationIndex: {
+    stateVariableIndex: {
       type: Number,
       required: true
     },
-    mutationTotalCount: {
+    stateVariableTotalCount: {
       type: Number,
       required: true
     }
   },
   computed: {
     sourceYOffset () {
-      return 275 + (this.componentIndex + 1 - (this.componentTotalCount + 1) / 2) * 35
+      return 495 - (this.stateVariableTotalCount - (this.stateVariableIndex + 1)) * 35
     },
     targetYOffset () {
-      return 275 + (this.mutationIndex + 1 - (this.mutationTotalCount + 1) / 2) * 35
+      return 275 + (this.componentIndex + 1 - (this.componentTotalCount + 1) / 2) * 35
     }
   }
 }
 </script>
 
 <style lang="sass" scoped>
-$vuexDiagramRedColor: #da5961
+$vuexDiagramGreenColor: #3ab882
 
 line
-  stroke: $vuexDiagramRedColor
+  stroke: $vuexDiagramGreenColor
   stroke-width: 2
 </style>

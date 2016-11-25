@@ -29,10 +29,10 @@ export default {
   },
   computed: {
     sourceYOffset () {
-      return 275 + (this.componentIndex + 1 - (this.componentTotalCount + 1) / 2) * 40
+      return 275 + (this.componentIndex + 1 - (this.componentTotalCount + 1) / 2) * 35
     },
     targetYOffset () {
-      return 55 + this.actionIndex * 40
+      return 55 + this.actionIndex * 35
     }
   }
 }
@@ -43,6 +43,5 @@ $vuexDiagramOrangeColor: #fcb738
 
 line
   stroke: $vuexDiagramOrangeColor
-  stroke-width: 3
-</style>
+  stroke-width: 2
 </style>

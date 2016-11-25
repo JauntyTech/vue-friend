@@ -27,7 +27,7 @@ export default {
       return `translate(0, ${this.yOffset})`
     },
     yOffset () {
-      return -15 - (this.totalCount - (this.index + 1)) * 40
+      return -15 - (this.totalCount - (this.index + 1)) * 35
     }
   }
 }
@@ -37,7 +37,7 @@ export default {
 $vuexDiagramPurpleColor: #8e7cb9
 
 $cornerRadius: 15
-$height: 30
+$height: 20
 $width: 140
 
 rect

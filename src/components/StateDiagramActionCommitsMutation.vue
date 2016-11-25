@@ -29,10 +29,10 @@ export default {
   },
   computed: {
     sourceYOffset () {
-      return 55 + this.actionIndex * 40
+      return 55 + this.actionIndex * 35
     },
     targetYOffset () {
-      return 275 + (this.mutationIndex + 1 - (this.mutationTotalCount + 1) / 2) * 40
+      return 275 + (this.mutationIndex + 1 - (this.mutationTotalCount + 1) / 2) * 35
     }
   }
 }
@@ -43,5 +43,5 @@ $vuexDiagramRedColor: #da5961
 
 line
   stroke: $vuexDiagramRedColor
-  stroke-width: 3
+  stroke-width: 2
 </style>

@@ -35,62 +35,74 @@
       },
       "c2": {
         "id": "c2",
-        "name": "ItemList",
+        "name": "Comment",
         "dispatches": [],
         "commits": []
       },
       "c3": {
         "id": "c3",
-        "name": "JobStoriesView",
-        "dispatches": [],
-        "commits": []
+        "name": "ItemList",
+        "dispatches": ["a1", "a3"],
+        "commits": ["m3"]
       },
       "c4": {
         "id": "c4",
-        "name": "NewsItem",
-        "dispatches": [],
+        "name": "ItemView",
+        "dispatches": ["a2"],
         "commits": []
       },
       "c5": {
         "id": "c5",
-        "name": "NewStoriesView",
+        "name": "JobStoriesView",
         "dispatches": [],
         "commits": []
       },
       "c6": {
         "id": "c6",
-        "name": "RouterLink",
+        "name": "NewsItem",
         "dispatches": [],
         "commits": []
       },
       "c7": {
         "id": "c7",
-        "name": "ShowStoriesView",
+        "name": "NewStoriesView",
         "dispatches": [],
         "commits": []
       },
       "c8": {
         "id": "c8",
-        "name": "Spinner",
+        "name": "RouterLink",
         "dispatches": [],
         "commits": []
       },
       "c9": {
         "id": "c9",
-        "name": "TopStoriesView",
+        "name": "ShowStoriesView",
         "dispatches": [],
         "commits": []
       },
       "c10": {
         "id": "c10",
-        "name": "TransitionGroup",
+        "name": "Spinner",
         "dispatches": [],
         "commits": []
       },
       "c11": {
         "id": "c11",
-        "name": "UserView",
+        "name": "TopStoriesView",
         "dispatches": [],
+        "commits": []
+      },
+      "c12": {
+        "id": "c12",
+        "name": "TransitionGroup",
+        "dispatches": [],
+        "commits": []
+      },
+      "c13": {
+        "id": "c13",
+        "name": "UserView",
+        "dispatches": ["a4"],
         "commits": []
       }
     },
@@ -119,23 +131,28 @@
     "stateVariables": {
       "s1": {
         "id": "s1",
-        "name": "activeType"
+        "name": "activeType",
+        "renders": []
       },
       "s2": {
         "id": "s2",
-        "name": "items"
+        "name": "items",
+        "renders": ["c2", "c4"]
       },
       "s3": {
         "id": "s3",
-        "name": "itemsPerPage"
+        "name": "itemsPerPage",
+        "renders": ["c3"]
       },
       "s4": {
         "id": "s4",
-        "name": "lists"
+        "name": "lists",
+        "renders": ["c3"]
       },
       "s5": {
         "id": "s5",
-        "name": "users"
+        "name": "users",
+        "renders": ["c13"]
       }
     }
   },
@@ -187,30 +204,60 @@
       },
       "c7": {
         "id": "c7",
-        "name": "StateDiagramComponent",
+        "name": "StateDiagramActionCommitsMutation",
         "dispatches": [],
         "commits": []
       },
       "c8": {
         "id": "c8",
-        "name": "StateDiagramGroup",
+        "name": "StateDiagramComponent",
         "dispatches": [],
         "commits": []
       },
       "c9": {
         "id": "c9",
-        "name": "StateDiagramMutation",
+        "name": "StateDiagramComponentCommitsMutation",
         "dispatches": [],
         "commits": []
       },
       "c10": {
         "id": "c10",
-        "name": "StateDiagramStateVariable",
+        "name": "StateDiagramComponentDispatchesAction",
         "dispatches": [],
         "commits": []
       },
       "c11": {
         "id": "c11",
+        "name": "StateDiagramGroup",
+        "dispatches": [],
+        "commits": []
+      },
+      "c12": {
+        "id": "c12",
+        "name": "StateDiagramMutation",
+        "dispatches": [],
+        "commits": []
+      },
+      "c13": {
+        "id": "c13",
+        "name": "StateDiagramMutationMutatesStateVariable",
+        "dispatches": [],
+        "commits": []
+      },
+      "c14": {
+        "id": "c14",
+        "name": "StateDiagramStateVariable",
+        "dispatches": [],
+        "commits": []
+      },
+      "c15": {
+        "id": "c15",
+        "name": "StateDiagramStateVariableRendersComponent",
+        "dispatches": [],
+        "commits": []
+      },
+      "c16": {
+        "id": "c16",
         "name": "StatePane",
         "dispatches": [],
         "commits": []
@@ -241,23 +288,28 @@
     "stateVariables": {
       "s1": {
         "id": "s1",
-        "name": "components.projectTrees"
+        "name": "components.projectTrees",
+        "renders": ["c2"]
       },
       "s2": {
         "id": "s2",
-        "name": "projects.all"
+        "name": "projects.all",
+        "renders": ["c4"]
       },
       "s3": {
         "id": "s3",
-        "name": "projects.isGetting"
+        "name": "projects.isGetting",
+        "renders": ["c1"]
       },
       "s4": {
         "id": "s4",
-        "name": "projects.selectedId"
+        "name": "projects.selectedId",
+        "renders": ["c4"]
       },
       "s5": {
         "id": "s5",
-        "name": "stateDiagram.stateDiagram"
+        "name": "stateDiagram.stateDiagram",
+        "renders": ["c5"]
       }
     }
   }

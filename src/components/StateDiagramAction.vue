@@ -23,7 +23,7 @@ export default {
       return `translate(0, ${this.yOffset})`
     },
     yOffset () {
-      return 15 + this.index * 40
+      return 15 + this.index * 35
     }
   }
 }
@@ -33,7 +33,7 @@ export default {
 $vuexDiagramOrangeColor: #fcb738
 
 $cornerRadius: 15
-$height: 30
+$height: 20
 $width: 140
 
 rect
