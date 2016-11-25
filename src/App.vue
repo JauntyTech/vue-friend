@@ -10,7 +10,7 @@
       el-col(v-bind:xs='24' v-bind:md='10')
         components-pane
       el-col(v-bind:xs='24' v-bind:md='10')
-        vuex-pane
+        state-pane
 </template>
 
 <script>
@@ -19,7 +19,7 @@ import * as getterNames from './store/getterNames'
 import ComponentsPane from './components/ComponentsPane'
 import HeaderPane from './components/HeaderPane'
 import ProjectsPane from './components/ProjectsPane'
-import VuexPane from './components/VuexPane'
+import StatePane from './components/StatePane'
 
 export default {
   name: 'app',
@@ -30,7 +30,7 @@ export default {
     ComponentsPane,
     HeaderPane,
     ProjectsPane,
-    VuexPane
+    StatePane
   }
 }
 </script>

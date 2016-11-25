@@ -1,12 +1,12 @@
 <template lang="pug">
-  div.vuex-pane
-    h2 Vuex
+  div.state-pane
+    h2 State
     img(src='../assets/vuex.png' width='100%')
 </template>
 
 <script>
 export default {
-  name: 'VuexPane'
+  name: 'StatePane'
 }
 </script>
 
