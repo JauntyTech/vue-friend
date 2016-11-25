@@ -19,6 +19,8 @@ const actions = {
   async [actionTypes.GET_PROJECTS] ({ commit }) {
     commit(mutationTypes.GET_PROJECTS_REQUEST)
     commit(mutationTypes.UPDATE_PROJECTS, await api.getProjects())
+    const firstProjectId = state.all[0].id
+    commit(mutationTypes.SELECT_PROJECT, firstProjectId)
     commit(mutationTypes.GET_PROJECTS_SUCCESS)
   }
 }
@@ -38,7 +40,6 @@ const mutations = {
 
   [mutationTypes.UPDATE_PROJECTS] (state, newProjects) {
     state.all = newProjects
-    state.selectedId = state.all[0].id
   }
 }
 
