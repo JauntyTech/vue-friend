@@ -4,6 +4,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -156,8 +159,8 @@
 }
 
 .el-switch__input:checked + .el-switch__core{
-    border-color: #20a0ff;
-    background-color: #20a0ff
+    border-color: #41b883;
+    background-color: #41b883
 }
 
 .el-switch__core{

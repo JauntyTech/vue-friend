@@ -4,6 +4,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -98,7 +101,7 @@
 }
 
 .el-message .el-icon-circle-check{
-    color: #13ce66;
+    color: #20a0ff;
 }
 
 .el-message .el-icon-circle-cross{
@@ -110,7 +113,7 @@
 }
 
 .el-message .el-icon-warning{
-    color: #f7ba2a;
+    color: #ffdd67;
 }
 
 .el-message__group{

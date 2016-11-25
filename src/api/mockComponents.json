@@ -1,0 +1,179 @@
+{
+  "hackernews-clone": [
+    {
+      "name": "AskStoriesView",
+      "children": [
+        {
+          "name": "ItemList",
+          "children": [
+            {
+              "name": "RouterLink"
+            },
+            {
+              "name": "Spinner"
+            },
+            {
+              "name": "TransitionGroup",
+              "children": [
+                {
+                  "name": "NewsItem",
+                  "children": [
+                    {
+                      "name": "RouterLink"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "JobStoriesView",
+      "children": [
+        {
+          "name": "ItemList",
+          "children": [
+            {
+              "name": "RouterLink"
+            },
+            {
+              "name": "Spinner"
+            },
+            {
+              "name": "TransitionGroup",
+              "children": [
+                {
+                  "name": "NewsItem",
+                  "children": [
+                    {
+                      "name": "RouterLink"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NewStoriesView",
+      "children": [
+        {
+          "name": "ItemList",
+          "children": [
+            {
+              "name": "RouterLink"
+            },
+            {
+              "name": "Spinner"
+            },
+            {
+              "name": "TransitionGroup",
+              "children": [
+                {
+                  "name": "NewsItem",
+                  "children": [
+                    {
+                      "name": "RouterLink"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RouterLink"
+    },
+    {
+      "name": "ShowStoriesView",
+      "children": [
+        {
+          "name": "ItemList",
+          "children": [
+            {
+              "name": "RouterLink"
+            },
+            {
+              "name": "Spinner"
+            },
+            {
+              "name": "TransitionGroup",
+              "children": [
+                {
+                  "name": "NewsItem",
+                  "children": [
+                    {
+                      "name": "RouterLink"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TopStoriesView",
+      "children": [
+        {
+          "name": "ItemList",
+          "children": [
+            {
+              "name": "RouterLink"
+            },
+            {
+              "name": "Spinner"
+            },
+            {
+              "name": "TransitionGroup",
+              "children": [
+                {
+                  "name": "NewsItem",
+                  "children": [
+                    {
+                      "name": "RouterLink"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "UserView",
+      "children": [
+        {
+          "name": "Spinner"
+        }
+      ]
+    }
+  ],
+  "vue-friend": [
+    {
+      "name": "App",
+      "children": [
+        {
+          "name": "HeaderPane"
+        },
+        {
+          "name": "ProjectsPane"
+        },
+        {
+          "name": "ComponentsPane"
+        },
+        {
+          "name": "StatePane"
+        }
+      ]
+    }
+  ]
+}

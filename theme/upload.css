@@ -16,6 +16,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -104,10 +107,10 @@
     color: #ff4949;
 }
 .el-progress.is-success .el-progress-bar__inner{
-    background-color: #13ce66;
+    background-color: #20a0ff;
 }
 .el-progress.is-success .el-progress__text{
-    color: #13ce66;
+    color: #20a0ff;
 }
 .el-progress__text{
     font-size: 14px;
@@ -171,7 +174,7 @@
     top: 0;
     height: 100%;
     border-radius: 2px 0 0 2px;
-    background-color: #20a0ff;
+    background-color: #41b883;
     text-align: right;
     border-radius: 100px;
     line-height: 1;
@@ -196,6 +199,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -356,7 +362,7 @@
 .el-upload__file.is-finished{}
 
 .el-upload__file.is-finished a:hover{
-    color: #20a0ff;
+    color: #41b883;
     cursor: pointer;
 }
 
@@ -376,7 +382,7 @@
     right: 15px;
     top: 0;
     font-size: 12px;
-    color: #20a0ff;
+    color: #41b883;
     display: none;
 }
 
@@ -416,12 +422,12 @@
 }
 
 .el-dragger:not(.is-showCover):hover{
-    border-color: #20a0ff;
+    border-color: #41b883;
 }
 
 .el-dragger.is-dragOver{
     background-color: rgba(32, 159, 255, .06);
-    border: 2px dashed #20a0ff;
+    border: 2px dashed #41b883;
 }
 
 .el-dragger__cover{
@@ -541,6 +547,6 @@
 }
 
 .el-dragger__text em{
-    color: #20a0ff;
+    color: #41b883;
     font-style: normal;
 }

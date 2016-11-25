@@ -4,6 +4,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -121,7 +124,7 @@
 }
 
 .el-radio__inner:not(.is-disabled):hover{
-    border-color: #20a0ff
+    border-color: #41b883
 }
 
 .el-radio__inner::after{
@@ -147,12 +150,12 @@
 }
 
 .el-radio__inner.is-focus{
-    border-color: #20a0ff
+    border-color: #41b883
 }
 
 .el-radio__inner.is-checked{
-    border-color: #20a0ff;
-    background: #20a0ff
+    border-color: #41b883;
+    background: #41b883
 }
 
 .el-radio__inner.is-checked::after{
@@ -245,7 +248,7 @@
 }
 
 .el-radio-button__inner:hover{
-    color: #20a0ff
+    color: #41b883
 }
 
 .el-radio-button__inner [class*="el-icon-"]{
@@ -268,8 +271,8 @@
 
 .el-radio-button__orig-radio:checked + .el-radio-button__inner{
     z-index: 1;
-    color: #20a0ff;
-    border-color: #20a0ff
+    color: #41b883;
+    border-color: #41b883
 }
 
 .el-radio-button__orig-radio:disabled{}

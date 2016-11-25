@@ -10,9 +10,12 @@
 
   /* Colors
   -------------------------- */
-  --color-primary: #20a0ff;
-  --color-success: #13ce66;
-  --color-warning: #f7ba2a;
+  /*--color-primary: #20a0ff;*/
+  --color-primary: #41b883;
+  /*--color-success: #13ce66;*/
+  --color-success: #20a0ff;
+  /*--color-warning: #f7ba2a;*/
+  --color-warning: #ffdd67;
   --color-danger: #ff4949;
   --color-info: #50BFFF;
   --color-blue: #2e90fe;

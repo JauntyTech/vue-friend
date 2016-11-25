@@ -2,27 +2,43 @@
   div#app
     header-pane
     el-row#content-row
-      el-col(v-bind:xs='24' v-bind:md='4')
+      el-col(
+        v-bind:xs='24' v-bind:md='4'
+        v-loading.body='isProjectsPaneWaiting'
+      )
         projects-pane
-      el-col(v-bind:xs='24' v-bind:md='10')
-        vue-pane
-      el-col(v-bind:xs='24' v-bind:md='10')
-        vuex-pane
+      el-col(
+        v-bind:xs='24' v-bind:md='10'
+        v-loading.body='isComponentsPaneWaiting'
+      )
+        components-pane
+      el-col(
+        v-bind:xs='24' v-bind:md='10'
+        v-loading.body='isStatePaneWaiting'
+      )
+        state-pane
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+import * as getterNames from './store/getterNames'
+import ComponentsPane from './components/ComponentsPane'
 import HeaderPane from './components/HeaderPane'
 import ProjectsPane from './components/ProjectsPane'
-import VuePane from './components/VuePane'
-import VuexPane from './components/VuexPane'
+import StatePane from './components/StatePane'
 
 export default {
   name: 'app',
+  computed: mapGetters([
+    getterNames.isComponentsPaneWaiting,
+    getterNames.isProjectsPaneWaiting,
+    getterNames.isStatePaneWaiting
+  ]),
   components: {
+    ComponentsPane,
     HeaderPane,
     ProjectsPane,
-    VuePane,
-    VuexPane
+    StatePane
   }
 }
 </script>

@@ -1,0 +1,264 @@
+{
+  "hackernews-clone": {
+    "actions": {
+      "a1": {
+        "id": "a1",
+        "name": "ENSURE_ACTIVE_ITEMS",
+        "dispatches": ["a2"],
+        "commits": []
+      },
+      "a2": {
+        "id": "a2",
+        "name": "FETCH_ITEMS",
+        "dispatches": [],
+        "commits": ["m2"]
+      },
+      "a3": {
+        "id": "a3",
+        "name": "FETCH_LIST_DATA",
+        "dispatches": ["a1"],
+        "commits": ["m1", "m3"]
+      },
+      "a4": {
+        "id": "a4",
+        "name": "FETCH_USER",
+        "dispatches": [],
+        "commits": ["m4"]
+      }
+    },
+    "components": {
+      "c1": {
+        "id": "c1",
+        "name": "AskStoriesView",
+        "dispatches": [],
+        "commits": []
+      },
+      "c2": {
+        "id": "c2",
+        "name": "ItemList",
+        "dispatches": [],
+        "commits": []
+      },
+      "c3": {
+        "id": "c3",
+        "name": "JobStoriesView",
+        "dispatches": [],
+        "commits": []
+      },
+      "c4": {
+        "id": "c4",
+        "name": "NewsItem",
+        "dispatches": [],
+        "commits": []
+      },
+      "c5": {
+        "id": "c5",
+        "name": "NewStoriesView",
+        "dispatches": [],
+        "commits": []
+      },
+      "c6": {
+        "id": "c6",
+        "name": "RouterLink",
+        "dispatches": [],
+        "commits": []
+      },
+      "c7": {
+        "id": "c7",
+        "name": "ShowStoriesView",
+        "dispatches": [],
+        "commits": []
+      },
+      "c8": {
+        "id": "c8",
+        "name": "Spinner",
+        "dispatches": [],
+        "commits": []
+      },
+      "c9": {
+        "id": "c9",
+        "name": "TopStoriesView",
+        "dispatches": [],
+        "commits": []
+      },
+      "c10": {
+        "id": "c10",
+        "name": "TransitionGroup",
+        "dispatches": [],
+        "commits": []
+      },
+      "c11": {
+        "id": "c11",
+        "name": "UserView",
+        "dispatches": [],
+        "commits": []
+      }
+    },
+    "mutations": {
+      "m1": {
+        "id": "m1",
+        "name": "SET_ACTIVE_TYPE",
+        "mutates": ["s1"]
+      },
+      "m2": {
+        "id": "m2",
+        "name": "SET_ITEMS",
+        "mutates": ["s2"]
+      },
+      "m3": {
+        "id": "m3",
+        "name": "SET_LIST",
+        "mutates": ["s4"]
+      },
+      "m4": {
+        "id": "m4",
+        "name": "SET_USER",
+        "mutates": ["s5"]
+      }
+    },
+    "stateVariables": {
+      "s1": {
+        "id": "s1",
+        "name": "activeType"
+      },
+      "s2": {
+        "id": "s2",
+        "name": "items"
+      },
+      "s3": {
+        "id": "s3",
+        "name": "itemsPerPage"
+      },
+      "s4": {
+        "id": "s4",
+        "name": "lists"
+      },
+      "s5": {
+        "id": "s5",
+        "name": "users"
+      }
+    }
+  },
+  "vue-friend": {
+    "actions": {
+      "a1": {
+        "id": "a1",
+        "name": "GET_PROJECTS",
+        "dispatches": [],
+        "commits": ["m1", "m2", "m3", "m4"]
+      }
+    },
+    "components": {
+      "c1": {
+        "id": "c1",
+        "name": "App",
+        "dispatches": [],
+        "commits": []
+      },
+      "c2": {
+        "id": "c2",
+        "name": "ComponentsPane",
+        "dispatches": [],
+        "commits": []
+      },
+      "c3": {
+        "id": "c3",
+        "name": "HeaderPane",
+        "dispatches": [],
+        "commits": []
+      },
+      "c4": {
+        "id": "c4",
+        "name": "ProjectsPane",
+        "dispatches": ["a1"],
+        "commits": ["m3"]
+      },
+      "c5": {
+        "id": "c5",
+        "name": "StateDiagram",
+        "dispatches": [],
+        "commits": []
+      },
+      "c6": {
+        "id": "c6",
+        "name": "StateDiagramAction",
+        "dispatches": [],
+        "commits": []
+      },
+      "c7": {
+        "id": "c7",
+        "name": "StateDiagramComponent",
+        "dispatches": [],
+        "commits": []
+      },
+      "c8": {
+        "id": "c8",
+        "name": "StateDiagramGroup",
+        "dispatches": [],
+        "commits": []
+      },
+      "c9": {
+        "id": "c9",
+        "name": "StateDiagramMutation",
+        "dispatches": [],
+        "commits": []
+      },
+      "c10": {
+        "id": "c10",
+        "name": "StateDiagramStateVariable",
+        "dispatches": [],
+        "commits": []
+      },
+      "c11": {
+        "id": "c11",
+        "name": "StatePane",
+        "dispatches": [],
+        "commits": []
+      }
+    },
+    "mutations": {
+      "m1": {
+        "id": "m1",
+        "name": "GET_PROJECTS_REQUEST",
+        "mutates": ["s3"]
+      },
+      "m2": {
+        "id": "m2",
+        "name": "GET_PROJECTS_SUCCESS",
+        "mutates": ["s3"]
+      },
+      "m3": {
+        "id": "m3",
+        "name": "SELECT_PROJECT",
+        "mutates": ["s4"]
+      },
+      "m4": {
+        "id": "m4",
+        "name": "UPDATE_PROJECTS",
+        "mutates": ["s2"]
+      }
+    },
+    "stateVariables": {
+      "s1": {
+        "id": "s1",
+        "name": "components.projectTrees"
+      },
+      "s2": {
+        "id": "s2",
+        "name": "projects.all"
+      },
+      "s3": {
+        "id": "s3",
+        "name": "projects.isGetting"
+      },
+      "s4": {
+        "id": "s4",
+        "name": "projects.selectedId"
+      },
+      "s5": {
+        "id": "s5",
+        "name": "stateDiagram.stateDiagram"
+      }
+    }
+  }
+}
