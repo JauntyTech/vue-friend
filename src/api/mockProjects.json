@@ -1,14 +1,10 @@
 [
   {
-    "id": "a",
-    "name": "Project 1"
+    "id": "hackernews-clone",
+    "name": "HackerNews Clone"
   },
   {
-    "id": "b",
-    "name": "Project 2"
-  },
-  {
-    "id": "c",
-    "name": "Project 3"
+    "id": "vue-friend",
+    "name": "Vue Friend"
   }
 ]
