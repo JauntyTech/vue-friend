@@ -7,9 +7,15 @@
         v-loading.body='isProjectsPaneWaiting'
       )
         projects-pane
-      el-col(v-bind:xs='24' v-bind:md='10')
+      el-col(
+        v-bind:xs='24' v-bind:md='10'
+        v-loading.body='isComponentsPaneWaiting'
+      )
         components-pane
-      el-col(v-bind:xs='24' v-bind:md='10')
+      el-col(
+        v-bind:xs='24' v-bind:md='10'
+        v-loading.body='isStatePaneWaiting'
+      )
         state-pane
 </template>
 
@@ -24,7 +30,9 @@ import StatePane from './components/StatePane'
 export default {
   name: 'app',
   computed: mapGetters([
-    getterNames.isProjectsPaneWaiting
+    getterNames.isComponentsPaneWaiting,
+    getterNames.isProjectsPaneWaiting,
+    getterNames.isStatePaneWaiting
   ]),
   components: {
     ComponentsPane,

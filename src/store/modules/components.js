@@ -8,6 +8,10 @@ const state = {
 const getters = {
   [getterNames.components]: (state, getters) => (
     state.projectTrees[getters.selectedProjectId]
+  ),
+
+  [getterNames.isComponentsPaneWaiting]: (state, getters) => (
+    getters.isProjectsPaneWaiting
   )
 }
 

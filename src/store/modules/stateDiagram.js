@@ -6,6 +6,10 @@ const state = {
 }
 
 const getters = {
+  [getterNames.isStatePaneWaiting]: (state, getters) => (
+    getters.isProjectsPaneWaiting
+  ),
+
   [getterNames.stateDiagramActions]: (state, getters) => {
     if (!getters.selectedProjectId) return null
     return state.stateDiagram[getters.selectedProjectId].actions
