@@ -8,24 +8,23 @@ Release date uncertain (part-time development began on November 23)
 
 ## :white_check_mark: To-do list
 
-#### Setup
+#### Improve Projects pane
 
-- [x] Lay out panes
-- [ ] Add Vuex store
+- [ ] Enable user to add projects
 
-#### Improve Vue visualization
+#### Improve Components pane
 
-- [ ] Show more component information in Vue pane
+- [ ] Show more details about each component
 
-#### Improve Vuex visualization
+#### Improve State pane
 
-- [ ] Convert Vuex image to interactive SVG
+- [ ] Visualize causal relationships between entities
+- [ ] Enable user to select things, which filters to show causally-linked things
 
 #### Analyze projects
 
 - [ ] Figure out a good way to parse a project's Vue component tree
 - [ ] Figure out a good way to parse a project's Vuex store
-- [ ] Set up a workflow for users to select projects on their computer
 
 ## :notebook: How to use
 
