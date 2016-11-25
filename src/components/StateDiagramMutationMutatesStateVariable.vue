@@ -29,10 +29,10 @@ export default {
   },
   computed: {
     sourceYOffset () {
-      return 275 + (this.mutationIndex + 1 - (this.mutationTotalCount + 1) / 2) * 40
+      return 275 + (this.mutationIndex + 1 - (this.mutationTotalCount + 1) / 2) * 35
     },
     targetYOffset () {
-      return 495 - (this.stateVariableTotalCount - (this.stateVariableIndex + 1)) * 40
+      return 495 - (this.stateVariableTotalCount - (this.stateVariableIndex + 1)) * 35
     }
   }
 }
@@ -43,5 +43,5 @@ $vuexDiagramPurpleColor: #8e7cb9
 
 line
   stroke: $vuexDiagramPurpleColor
-  stroke-width: 3
+  stroke-width: 2
 </style>

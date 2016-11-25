@@ -35,6 +35,15 @@
         v-bind:stateVariableIndex='stateVariableIndex'
         v-bind:stateVariableTotalCount='Object.keys(stateDiagramStateVariables).length'
       )
+    template(v-for='(stateVariable, _, stateVariableIndex) in stateDiagramStateVariables')
+      state-diagram-state-variable-renders-component(
+        v-for='(component, _, componentIndex) in stateDiagramComponents'
+        v-if='doesStateVariableRenderComponent(stateVariable, component)'
+        v-bind:stateVariableIndex='stateVariableIndex'
+        v-bind:stateVariableTotalCount='Object.keys(stateDiagramStateVariables).length'
+        v-bind:componentIndex='componentIndex'
+        v-bind:componentTotalCount='Object.keys(stateDiagramComponents).length'
+      )
     text.actions-label(
       v-show='Object.keys(stateDiagramActions).length > 0'
       v-bind:x='240' v-bind:y='15'
@@ -97,6 +106,7 @@ import StateDiagramGroup from './StateDiagramGroup'
 import StateDiagramMutation from './StateDiagramMutation'
 import StateDiagramMutationMutatesStateVariable from './StateDiagramMutationMutatesStateVariable'
 import StateDiagramStateVariable from './StateDiagramStateVariable'
+import StateDiagramStateVariableRendersComponent from './StateDiagramStateVariableRendersComponent'
 
 export default {
   name: 'StateDiagram',
@@ -118,6 +128,9 @@ export default {
     },
     doesMutationMutateStateVariable (mutation, stateVariable) {
       return mutation.mutates.indexOf(stateVariable.id) !== -1
+    },
+    doesStateVariableRenderComponent (stateVariable, component) {
+      return stateVariable.renders.indexOf(component.id) !== -1
     }
   },
   components: {
@@ -129,7 +142,8 @@ export default {
     StateDiagramGroup,
     StateDiagramMutation,
     StateDiagramMutationMutatesStateVariable,
-    StateDiagramStateVariable
+    StateDiagramStateVariable,
+    StateDiagramStateVariableRendersComponent
   }
 }
 </script>
