@@ -1,26 +1,31 @@
 <template lang="pug">
   div.projects-pane
     h2 Projects
-    el-menu(default-active='0')
+    el-menu(
+      v-bind:default-active='String(selectedProjectId)'
+      v-on:select='SELECT_PROJECT'
+    )
       el-menu-item(
-        v-for='(project, projectIndex) in projects'
-        v-bind:index='String(projectIndex)'
+        v-for='project in projects'
+        v-bind:index='String(project.id)'
       )
         | {{ project.name }}
 </template>
 
 <script>
+import { mapGetters, mapMutations } from 'vuex'
+import * as getterNames from '../store/getterNames'
+import * as mutationTypes from '../store/mutationTypes'
+
 export default {
   name: 'ProjectsPane',
-  data () {
-    return {
-      projects: [
-        {name: 'Project 1'},
-        {name: 'Project 2'},
-        {name: 'Project 3'}
-      ]
-    }
-  }
+  computed: mapGetters([
+    getterNames.projects,
+    getterNames.selectedProjectId
+  ]),
+  methods: mapMutations([
+    mutationTypes.SELECT_PROJECT
+  ])
 }
 </script>
 
