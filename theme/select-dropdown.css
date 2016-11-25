@@ -4,6 +4,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -96,7 +99,7 @@
 .el-select-dropdown.is-multiple{}
 
 .el-select-dropdown.is-multiple .el-select-dropdown__item.selected{
-    color: #20a0ff;
+    color: #41b883;
     background-color: #fff
 }
 

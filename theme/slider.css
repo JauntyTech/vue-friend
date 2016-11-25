@@ -12,6 +12,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -113,7 +116,7 @@
 }
 .el-input.is-active .el-input__inner{
     outline: none;
-    border-color: #20a0ff;
+    border-color: #41b883;
 }
 .el-input__inner{
     display: block;
@@ -148,7 +151,7 @@
 }
 .el-input__inner:focus{
     outline: none;
-    border-color: #20a0ff;
+    border-color: #41b883;
 }
 .el-input__icon{
     position: absolute;
@@ -293,13 +296,16 @@
 }
 .el-textarea__inner:focus{
     outline: none;
-    border-color: #20a0ff;
+    border-color: #41b883;
 }
 :root{
     /* Transition
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -409,7 +415,7 @@
     position: absolute;
 }
 .el-input-number__increase:hover, .el-input-number__decrease:hover{
-    color: #20a0ff;
+    color: #41b883;
 }
 .el-input-number__increase.is-disabled, .el-input-number__decrease.is-disabled{
     color: #D3DCE6;
@@ -455,6 +461,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -656,6 +665,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -791,7 +803,7 @@
 
 .el-slider__bar{
     height: 4px;
-    background-color: #20a0ff;
+    background-color: #41b883;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     position: absolute;
@@ -839,7 +851,7 @@
 .el-slider__button{
     width: 12px;
     height: 12px;
-    background-color: #20a0ff;
+    background-color: #41b883;
     border-radius: 50%;
     transition: .2s;
 }

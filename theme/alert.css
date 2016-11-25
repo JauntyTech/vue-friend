@@ -4,6 +4,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -104,7 +107,7 @@
 }
 
 .el-alert--success{
-    background-color: #13ce66;
+    background-color: #20a0ff;
 }
 
 .el-alert--info{
@@ -112,7 +115,7 @@
 }
 
 .el-alert--warning{
-    background-color: #f7ba2a;
+    background-color: #ffdd67;
 }
 
 .el-alert--error{

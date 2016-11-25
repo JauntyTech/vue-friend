@@ -3,6 +3,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -86,6 +89,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -342,7 +348,7 @@
 }
 .el-date-editor__editor:focus, .el-date-editor:hover > .el-date-editor__editor, .el-date-editor.is-active > .el-date-editor__editor {
     outline: none;
-    border-color: #20a0ff;
+    border-color: #41b883;
 }
 .el-date-editor .el-date-editor__clear {
     display: none;
@@ -355,6 +361,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -478,6 +487,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border

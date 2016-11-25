@@ -3,6 +3,9 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
+  /*--color-success: #13ce66;*/
+  /*--color-warning: #f7ba2a;*/
   /* Link
   -------------------------- */
   /* Border
@@ -86,6 +89,9 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
+  /*--color-success: #13ce66;*/
+  /*--color-warning: #f7ba2a;*/
   /* Link
   -------------------------- */
   /* Border
@@ -342,7 +348,7 @@
 }
 .el-date-editor__editor:focus, .el-date-editor:hover > .el-date-editor__editor, .el-date-editor.is-active > .el-date-editor__editor {
   outline: none;
-  border-color: #20a0ff;
+  border-color: #41b883;
 }
 .el-date-editor .el-date-editor__clear {
   display: none;
@@ -355,6 +361,9 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
+  /*--color-success: #13ce66;*/
+  /*--color-warning: #f7ba2a;*/
   /* Link
   -------------------------- */
   /* Border
@@ -437,6 +446,9 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
+  /*--color-success: #13ce66;*/
+  /*--color-warning: #f7ba2a;*/
   /* Link
   -------------------------- */
   /* Border
@@ -558,7 +570,7 @@
 }
 .el-picker-panel__shortcut.active {
   background-color: #e6f1fe;
-  color: #20a0ff;
+  color: #41b883;
 }
 .el-picker-panel__btn {
   border: 1px solid #dcdcdc;
@@ -672,7 +684,7 @@
   color: #20a0ff;
 }
 .el-date-picker__header-label.active {
-  color: #20a0ff;
+  color: #41b883;
 }
 .el-date-picker__prev-btn {
   float: left;
@@ -695,6 +707,9 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
+  /*--color-success: #13ce66;*/
+  /*--color-warning: #f7ba2a;*/
   /* Link
   -------------------------- */
   /* Border
@@ -794,7 +809,7 @@
 }
 
 .time-select-item.selected:not(.disabled) {
-  background-color: #20a0ff;
+  background-color: #41b883;
   color: #fff
 }
 

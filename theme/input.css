@@ -4,6 +4,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -112,7 +115,7 @@
 
 .el-input.is-active .el-input__inner{
     outline: none;
-    border-color: #20a0ff;
+    border-color: #41b883;
 }
 
 .el-input__inner{
@@ -154,7 +157,7 @@
 
 .el-input__inner:focus{
     outline: none;
-    border-color: #20a0ff
+    border-color: #41b883
 }
 
 .el-input__icon{
@@ -332,5 +335,5 @@
 
 .el-textarea__inner:focus{
     outline: none;
-    border-color: #20a0ff
+    border-color: #41b883
 }

@@ -3,6 +3,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -111,7 +114,7 @@
     background-color: #AFDCFF;
 }
 .el-date-table td.current, .el-date-table td.start-date, .el-date-table td.end-date {
-    background-color: #20a0ff !important;
+    background-color: #41b883 !important;
     color: #fff;
 }
 .el-date-table td.disabled {
@@ -141,6 +144,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -244,7 +250,7 @@
     color: #ccc;
 }
 .el-month-table td.current .cell {
-    background-color: #20a0ff !important;
+    background-color: #41b883 !important;
     color: #fff;
 }
 :root {
@@ -252,6 +258,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -358,7 +367,7 @@
     color: #ccc;
 }
 .el-year-table td.current .cell {
-    background-color: #20a0ff !important;
+    background-color: #41b883 !important;
     color: #fff;
 }
 :root {
@@ -366,6 +375,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -489,6 +501,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -572,6 +587,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -828,7 +846,7 @@
 }
 .el-date-editor__editor:focus, .el-date-editor:hover > .el-date-editor__editor, .el-date-editor.is-active > .el-date-editor__editor {
     outline: none;
-    border-color: #20a0ff;
+    border-color: #41b883;
 }
 .el-date-editor .el-date-editor__clear {
     display: none;
@@ -841,6 +859,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -923,6 +944,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -1044,7 +1068,7 @@
 }
 .el-picker-panel__shortcut.active {
     background-color: #e6f1fe;
-    color: #20a0ff;
+    color: #41b883;
 }
 .el-picker-panel__btn {
     border: 1px solid #dcdcdc;
@@ -1158,7 +1182,7 @@
     color: #20a0ff;
 }
 .el-date-picker__header-label.active {
-    color: #20a0ff;
+    color: #41b883;
 }
 .el-date-picker__prev-btn {
     float: left;
@@ -1181,6 +1205,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
@@ -1365,6 +1392,9 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
+    /*--color-success: #13ce66;*/
+    /*--color-warning: #f7ba2a;*/
     /* Link
   -------------------------- */
     /* Border
