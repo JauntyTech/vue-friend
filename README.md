@@ -2,6 +2,8 @@
 
 > Vue.js developer assistant that visualizes your project source code
 
+<img src="static/screenshot.png" alt="Screenshot" width="100%"/>
+
 ## :construction: Under development
 
 Release date uncertain (part-time development began on November 23)
