@@ -1,5 +1,40 @@
 <template lang="pug">
   svg.state-diagram
+    template(v-for='(action, _, actionIndex) in stateDiagramActions')
+      state-diagram-action-commits-mutation(
+        v-for='(mutation, _, mutationIndex) in stateDiagramMutations'
+        v-if='doesActionCommitMutation(action, mutation)'
+        v-bind:actionIndex='actionIndex'
+        v-bind:actionTotalCount='Object.keys(stateDiagramActions).length'
+        v-bind:mutationIndex='mutationIndex'
+        v-bind:mutationTotalCount='Object.keys(stateDiagramMutations).length'
+      )
+    template(v-for='(component, _, componentIndex) in stateDiagramComponents')
+      state-diagram-component-commits-mutation(
+        v-for='(mutation, _, mutationIndex) in stateDiagramMutations'
+        v-if='doesComponentCommitMutation(component, mutation)'
+        v-bind:componentIndex='componentIndex'
+        v-bind:componentTotalCount='Object.keys(stateDiagramComponents).length'
+        v-bind:mutationIndex='mutationIndex'
+        v-bind:mutationTotalCount='Object.keys(stateDiagramMutations).length'
+      )
+      state-diagram-component-dispatches-action(
+        v-for='(action, _, actionIndex) in stateDiagramActions'
+        v-if='doesComponentDispatchAction(component, action)'
+        v-bind:componentIndex='componentIndex'
+        v-bind:componentTotalCount='Object.keys(stateDiagramComponents).length'
+        v-bind:actionIndex='actionIndex'
+        v-bind:actionTotalCount='Object.keys(stateDiagramActions).length'
+      )
+    template(v-for='(mutation, _, mutationIndex) in stateDiagramMutations')
+      state-diagram-mutation-mutates-state-variable(
+        v-for='(stateVariable, _, stateVariableIndex) in stateDiagramStateVariables'
+        v-if='doesMutationMutateStateVariable(mutation, stateVariable)'
+        v-bind:mutationIndex='mutationIndex'
+        v-bind:mutationTotalCount='Object.keys(stateDiagramMutations).length'
+        v-bind:stateVariableIndex='stateVariableIndex'
+        v-bind:stateVariableTotalCount='Object.keys(stateDiagramStateVariables).length'
+      )
     text.actions-label(
       v-show='Object.keys(stateDiagramActions).length > 0'
       v-bind:x='240' v-bind:y='15'
@@ -55,8 +90,12 @@ import { mapGetters } from 'vuex'
 import * as getterNames from '../store/getterNames'
 import StateDiagramAction from './StateDiagramAction'
 import StateDiagramComponent from './StateDiagramComponent'
+import StateDiagramActionCommitsMutation from './StateDiagramActionCommitsMutation'
+import StateDiagramComponentCommitsMutation from './StateDiagramComponentCommitsMutation'
+import StateDiagramComponentDispatchesAction from './StateDiagramComponentDispatchesAction'
 import StateDiagramGroup from './StateDiagramGroup'
 import StateDiagramMutation from './StateDiagramMutation'
+import StateDiagramMutationMutatesStateVariable from './StateDiagramMutationMutatesStateVariable'
 import StateDiagramStateVariable from './StateDiagramStateVariable'
 
 export default {
@@ -67,11 +106,29 @@ export default {
     getterNames.stateDiagramMutations,
     getterNames.stateDiagramStateVariables
   ]),
+  methods: {
+    doesActionCommitMutation (action, mutation) {
+      return action.commits.indexOf(mutation.id) !== -1
+    },
+    doesComponentCommitMutation (component, mutation) {
+      return component.commits.indexOf(mutation.id) !== -1
+    },
+    doesComponentDispatchAction (component, action) {
+      return component.dispatches.indexOf(action.id) !== -1
+    },
+    doesMutationMutateStateVariable (mutation, stateVariable) {
+      return mutation.mutates.indexOf(stateVariable.id) !== -1
+    }
+  },
   components: {
     StateDiagramAction,
     StateDiagramComponent,
+    StateDiagramActionCommitsMutation,
+    StateDiagramComponentCommitsMutation,
+    StateDiagramComponentDispatchesAction,
     StateDiagramGroup,
     StateDiagramMutation,
+    StateDiagramMutationMutatesStateVariable,
     StateDiagramStateVariable
   }
 }

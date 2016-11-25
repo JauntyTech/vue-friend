@@ -18,7 +18,6 @@ Release date uncertain (part-time development began on November 23)
 
 #### Improve State pane
 
-- [ ] Visualize causal relationships between entities
 - [ ] Enable user to select things, which filters to show causally-linked things
 
 #### Analyze projects
