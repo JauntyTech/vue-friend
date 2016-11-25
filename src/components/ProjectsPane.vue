@@ -1,15 +1,16 @@
 <template lang="pug">
   div.projects-pane
     h2 Projects
-    el-menu(
-      v-bind:default-active='String(selectedProjectId)'
-      v-on:select='SELECT_PROJECT'
-    )
-      el-menu-item(
-        v-for='project in projects'
-        v-bind:index='String(project.id)'
+    div.menu-container
+      el-menu(
+        v-bind:default-active='String(selectedProjectId)'
+        v-on:select='SELECT_PROJECT'
       )
-        | {{ project.name }}
+        el-menu-item(
+          v-for='project in projects'
+          v-bind:index='String(project.id)'
+        )
+          | {{ project.name }}
 </template>
 
 <script>
@@ -43,6 +44,13 @@ $extraLightGray: #eff2f7
 
 .projects-pane
   background-color: $extraLightGray
+  display: flex
+  flex-flow: column
+  height: 100%
+
+.projects-pane .menu-container
+  flex: 1 1 auto
+  overflow: scroll
 
 .projects-pane .el-menu
   text-align: left
